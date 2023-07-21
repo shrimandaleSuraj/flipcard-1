@@ -1,0 +1,122 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+
+
+
+
+
+ .mainHeader .nvavbar-brand{
+    width:120px ;
+}
+.main .navbar-nav .nav-link{
+    color: #fff;
+    text-transform: uppercase;
+}
+.mainHeader .navbar-nav .active > .nav-link,
+.mainHeader .navbar-nav .nav-link .active,
+.mainHeader .navbar-nav  .nav-link .show,
+.mainHeader .navbar-nav  .show > .nav-link{
+    color : orange;
+    border-bottom:2px solid orange ;
+}
+
+.mainHeader .navbar-nav .nav-link:focus,
+.mainHeader .navbar-nav .nav-link:hover{
+    color: orange;
+    border-bottom: 2px solid;
+}
+ .mainSlider .nvavbar-brand img{
+    width: 100%;
+}
+.mainSlider .carousel-item{
+    height: 450px;
+}
+.mainSlider .carousel-item img{
+    height: 100%;
+    object-fit: cover;
+} 
+.paralax{
+    /* background-image: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/lights.jpg); */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.paralax::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.paralax.home{
+    background-image: url(../images/lights.jpg);
+}
+
+.paralax.video{
+    background-image: url(../images/media.jpg);
+}
+
+.video i{
+    cursor: pointer;
+}
+.home-gallary a{
+    height: 350px;
+    width: 100%;
+    display: inline-block;
+}
+
+.home-gallary a > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* about css style */
+
+.tmSlider .owal-nav{
+    position: absolute;
+    top: 45%;
+    left: -3%;
+    width: 106%;
+    display: flex;
+    justify-content: space-between;
+}
+.tmSlider .item{
+    text-align: justify;
+}
+.tmSlider .item img{
+    width: 80% !important;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.footer{
+    background-color: #000;
+    color: white;
+}
+.staff img {
+   
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    height: auto;
+}
+
+
+@media all and (max-width: 768px){
+    .news .form-inline .form-group {
+        flex: 0 0 100%;
+    }
+}
